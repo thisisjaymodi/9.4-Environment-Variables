@@ -2,9 +2,9 @@ name: Node CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   test:
@@ -46,3 +46,4 @@ jobs:
           PG_USER: ${{ secrets.PG_USER }}
           SESSION_SECRET: ${{ secrets.SESSION_SECRET }}
         run: npm test
+
